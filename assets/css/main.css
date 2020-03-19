@@ -23,7 +23,10 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+z-index: 100;
+}
+
 
 body {
 	line-height: 1;
@@ -2192,6 +2195,7 @@ input, select, textarea {
 
 	footer.major {
 		margin: 4em 0 0 0;
+		z-index: 1; 
 	}
 
 /* Form */
@@ -3492,8 +3496,9 @@ input, select, textarea {
 		}
 
 			#banner .content header {
-				display: inline-block;
-				vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15em;
 			}
 
 				#banner .content header h2 {
@@ -3531,6 +3536,7 @@ input, select, textarea {
 		background: #272833;
 		padding: 6em 0;
 		text-align: center;
+		
 	}
 
 		#footer .icons .icon.alt {
@@ -4110,12 +4116,12 @@ input, select, textarea {
 /* Everything I added is below this*/
 
 video {
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }
